@@ -7,6 +7,9 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/concat',  '6.0.0'
 mod 'puppetlabs-stdlib', '7.0.0'
 mod 'puppetlabs-apache', '6.0.1'
+mod 'puppetlabs-puppet_metrics_collector', '6.6.0'
+mod 'puppetlabs-puppet_metrics_dashboard', '2.5.0'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
