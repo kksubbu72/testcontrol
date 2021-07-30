@@ -1,0 +1,35 @@
+# Puppet Infrastructure Summary: Found a Monolithic Infrastructure with Compilers
+
+# Found 2 CPU(s) / 3789 MB RAM for cm201987.platform9.puppet.net
+# This does not meet the minimum system requirements to calculate its settings without '--force`
+
+---
+puppet_enterprise::profile::database::shared_buffers: 3176MB
+puppet_enterprise::puppetdb::command_processing_threads: 1
+puppet_enterprise::profile::puppetdb::java_args:
+  Xms: 1024m
+  Xmx: 1024m
+puppet_enterprise::profile::orchestrator::jruby_max_active_instances: 2
+puppet_enterprise::profile::orchestrator::java_args:
+  Xms: 512m
+  Xmx: 512m
+puppet_enterprise::profile::console::java_args:
+  Xms: 512m
+  Xmx: 512m
+puppet_enterprise::master::puppetserver::jruby_max_active_instances: 2
+puppet_enterprise::profile::master::java_args:
+  Xms: 1024m
+  Xmx: 1024m
+puppet_enterprise::master::puppetserver::reserved_code_cache: 256m
+puppet_infrastructure_tune::metadata:
+  pe_version: 2019.8.7
+  tune_date: '2021-07-30'
+
+
+
+
+
+
+
+
+
