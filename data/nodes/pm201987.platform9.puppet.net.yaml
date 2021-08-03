@@ -31,7 +31,12 @@ puppet_infrastructure_tune::metadata:
 # RAM Summary: Total/Used/Free: 15884/10762/5122 for pm201987.platform9.puppet.net
 # JVM Summary: Using 768 MB per Puppet Server JRuby for pm201987.platform9.puppet.net
 
-
+puppet_metrics_collector::puppetserver_hosts:
+  -'pm201987.platform9.puppet.net.yaml'
+  -'cm201987.platform9.puppet.net.yaml'
+  -'rep201987.platform9.puppet.net.yaml'
+puppet_metrics_collector::puppetdb_hosts:
+  -'pm201987.platform9.puppet.net.yaml'
 
 
 
