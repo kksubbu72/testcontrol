@@ -37,3 +37,27 @@ node 'pm201987.platform9.puppet.net.yaml' {
 node 'cm201987.platform9.puppet.net.yaml' {
   include puppet_metrics_collector::system
 }
+
+node 'pm201987.platform9.puppet.net'{
+  includepuppet_metrics_dashboard::profile::master::install
+  includepuppet_metrics_dashboard::profile::master::postgres_access
+}
+node 'dashboard.example.com'{
+  class{ 'puppet_metrics_dashboard':
+    add_dashboard_examples => true,
+    overwrite_dashboards   => false,
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
