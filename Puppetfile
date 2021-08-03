@@ -6,7 +6,6 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/stdlib',  '6.0.0'
 #mod 'puppetlabs/concat',  '6.0.0'
 mod 'puppetlabs-apache', '6.0.1'
-mod 'puppetlabs-puppet_metrics_collector', '6.6.0'
 mod 'puppetlabs-puppet_metrics_dashboard', '2.5.0'
 mod 'puppet-grafana', '8.0.0'
 mod 'puppet-telegraf', '4.1.0'
@@ -14,6 +13,11 @@ mod 'puppetlabs-apt', '8.1.0'
 mod 'puppetlabs-inifile', '5.1.0'
 mod 'puppetlabs-puppetserver_gem', '1.1.1'
 mod 'puppetlabs-stdlib', '7.1.0'
+mod 'puppetlabs-puppet_metrics_collector', '7.0.3'
+
+
+
+
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
