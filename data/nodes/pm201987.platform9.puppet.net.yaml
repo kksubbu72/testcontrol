@@ -42,33 +42,14 @@ node 'pm201987.platform9.puppet.net'{
   includepuppet_metrics_dashboard::profile::master::install
   includepuppet_metrics_dashboard::profile::master::postgres_access
 }
-node 'dashboard.example.com'{
+node 'pm201987.platform9.puppet.net'{
   class{ 'puppet_metrics_dashboard':
     add_dashboard_examples => true,
     overwrite_dashboards   => false,
   }
 }
 
-node 'master.example.com' {
-  include puppet_metrics_dashboard::profile::master::install
-}
-node 'dbcompiler.example.com' {
-  class { 'puppet_metrics_dashboard::profile::dbcompiler::install':
-    influxdb_urls => ["http://dashboard.example.com:8086"]
-  }
-}
 
-node 'dashboard.example.com' {
-  class { 'puppet_metrics_dashboard':
-    add_dashboard_examples => true,
-    overwrite_dashboards   => false,
-    configure_telegraf     => true,
-    enable_telegraf        => true,
-    consume_graphite       => true,
-    influxdb_database_name => ['telegraf', 'graphite', 'puppet_metrics'],
-    master_list            => ['pm201987.platform9.puppet.net', 'cm201987.platform9.puppet.net'],
-  }
-}
 
 
 

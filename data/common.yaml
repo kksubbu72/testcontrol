@@ -1,11 +1,4 @@
 ---
 message: "This node is using common data"
 
-puppet_metrics_dashboard::master_list:
-  - "pm201987.platform9.puppet.net"
-  - ["cm201987.platform9.puppet.net", 9140]
-puppet_metrics_dashboard::puppetdb_list:
-  - "pm201987.platform9.puppet.net"
-puppet_metrics_dashboard::postgres_host_list:
-  - "pm201987.platform9.puppet.net"
 
