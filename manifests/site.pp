@@ -42,13 +42,18 @@ node 'pm201987.platform9.puppet.net'{
   includepuppet_metrics_dashboard::profile::master::install
   includepuppet_metrics_dashboard::profile::master::postgres_access
 }
-node 'dashboard.example.com'{
-  class{ 'puppet_metrics_dashboard':
+
+node 'dashboard.example.com' {
+  class { 'puppet_metrics_dashboard':
     add_dashboard_examples => true,
     overwrite_dashboards   => false,
+    configure_telegraf     => true,
+    enable_telegraf        => true,
+    master_list            => ['pm201987.platform9.puppet.net', ['cm201987.platform9.puppet.net', 9140]],
+    puppetdb_list          => ['pm201987.platform9.puppet.net',],
+    postgres_host_list     => ['pm201987.platform9.puppet.net',],
   }
 }
-
 
 
 
