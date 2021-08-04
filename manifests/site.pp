@@ -42,9 +42,12 @@ node 'pm201987.platform9.puppet.net'{
   include puppet_metrics_dashboard::profile::master::install
 }
 
-
-
-
+node 'pm201987.platform9.puppet.net' {
+  class { 'puppet_metrics_dashboard':
+    add_dashboard_examples => true,
+    overwrite_dashboards   => false,
+  }
+}
 
 
 
