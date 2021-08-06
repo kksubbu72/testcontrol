@@ -29,7 +29,10 @@ node default {
   # Example:
   #   class { 'my_class': }
 }
-
+node 'pm201987.platform9.puppet.net' {
+  include puppet_metrics_dashboard::profile::master::install
+  include puppet_metrics_dashboard::profile::master::postgres_access
+}
 
 
 
