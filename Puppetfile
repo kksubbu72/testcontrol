@@ -14,7 +14,6 @@ mod 'puppetlabs-inifile', '5.1.0'
 mod 'puppetlabs-puppetserver_gem', '1.1.1'
 mod 'puppetlabs-stdlib', '7.1.0'
 mod 'puppetlabs-puppet_metrics_collector', '7.0.3'
-mod 'puppetlabs-puppetserver_gem', '1.1.1'
 
 
 
