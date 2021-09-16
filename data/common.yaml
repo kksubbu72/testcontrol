@@ -1,6 +1,6 @@
 ---
 message: "This node is using common data"
 
-puppet_enterprise::profile::certificate_authority::client_allowlist
+puppet_enterprise::profile::certificate_authority::client_allowlist:
 - subbutest.com
 
