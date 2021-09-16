@@ -1,6 +1,3 @@
 ---
 message: "This node is using common data"
 
-puppet_enterprise::profile::certificate_authority::client_allowlist:
-- 123test.com
-
