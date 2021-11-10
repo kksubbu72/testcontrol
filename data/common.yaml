@@ -2,6 +2,6 @@
 puppet_enterprise::master::code_manager::forge_settings: 
 baseurl: 'https://forgeapi.puppetlabs.com'
 proxy: 'http://subbu.proxytest.vlan:8080'
-
+puppet_enterprise::profile::master::r10k_proxy: 'http://subbu.proxytest.vlan:8080'
 message: "This node is using common data"
 
